@@ -1,0 +1,253 @@
+
+(object Petal
+    version    	50
+    _written   	"Rose 2006.0.0.060314"
+    charSet    	134)
+
+(object Class_Category "Basic information management"
+    is_unit    	TRUE
+    is_loaded  	TRUE
+    quid       	"35C0EC150366"
+    documentation 	" A separate package is recommended for each Use Case to facilitate access and version control of related use case artifacts."
+    exportControl 	"Public"
+    logical_models 	(list unit_reference_list
+	(object UseCase "Basic information of school"
+	    quid       	"34E37FB203D4"
+	    documentation 	
+|<<The brief description of the use case is entered here.  For guidance on what should go in this description, see the following Rational Unified Process references:
+|
+|- Activity: Find Actors and Use Cases
+|- Guidelines: Use Case>>
+	    
+	    logical_presentations 	(list unit_reference_list
+		(object UseCaseDiagram "Local View - <Use Case Name>"
+		    quid       	"34E3E970019A"
+		    title      	"Local View - <Use Case Name>"
+		    documentation 	"This diagram presents the Local View of Use Case <Use Case Name>.  The diagram depicts all actors which interact with <Use Case Name>, and any Use Cases which are associated with <Use Case Name>."
+		    zoom       	100
+		    max_height 	28350
+		    max_width  	21600
+		    origin_x   	0
+		    origin_y   	0
+		    items      	(list diagram_item_list
+			(object NoteView @1
+			    location   	(480, 400)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@1
+				location   	(33, 35)
+				fill_color 	13434879
+				nlines     	15
+				max_width  	859
+				justify    	1
+				label      	
+|Local View - Use Case <Use Case Name>
+|
+|This diagram presents the Local View of Use Case <Use Case Name>.  The diagram depicts all actors which interact with <Use Case Name>, and any Use Cases which are associated with <Use Case Name>.
+|
+|Related Rational Unified Process Activities:
+|Activity:  Detail a Use-Case
+|Step: Illustrate Relationships with Actors and Other Use-Cases
+|
+|*Note: this note may be deleted once the diagram is created.
+				)
+			    line_color 	3342489
+			    fill_color 	13434879
+			    width      	919
+			    height     	743)
+			(object NoteView @2
+			    location   	(1344, 160)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@2
+				location   	(1006, 29)
+				fill_color 	13434879
+				nlines     	5
+				max_width  	640
+				justify    	1
+				label      	
+|Created/modified by: <name>
+|Date: <creation/modification date>
+|
+|Approved by: <name>
+|Date: <approval date>
+				)
+			    line_color 	3342489
+			    fill_color 	13434879
+			    width      	700
+			    height     	275)
+			(object UseCaseView "Use Case View::SICS::Use Cases::Basic information management::Basic information of school" @3
+			    location   	(1088, 1024)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@3
+				location   	(1088, 1162)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	646
+				justify    	0
+				label      	"Basic information of school")
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    fill_color 	13434879
+			    quidu      	"34E37FB203D4"
+			    height     	118
+			    autoResize 	TRUE)
+			(object ClassView "Class" "Use Case View::SICS::Actors::School" @4
+			    ShowCompartmentStereotypes 	TRUE
+			    IncludeAttribute 	TRUE
+			    IncludeOperation 	TRUE
+			    location   	(448, 1024)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    label      	(object ItemLabel
+				Parent_View 	@4
+				location   	(448, 1184)
+				anchor_loc 	1
+				nlines     	2
+				max_width  	325
+				justify    	0
+				label      	"School")
+			    icon       	"Actor"
+			    icon_style 	"Icon"
+			    line_color 	3342489
+			    quidu      	"353D5816026C"
+			    annotation 	8
+			    autoResize 	TRUE)
+			(object AssociationViewNew "" @5
+			    location   	(741, 1024)
+			    font       	(object Font
+				size       	9
+				face       	"Arial"
+				bold       	FALSE
+				italics    	FALSE
+				underline  	FALSE
+				strike     	FALSE
+				color      	0
+				default_color 	TRUE)
+			    stereotype 	(object SegLabel @6
+				Parent_View 	@5
+				location   	(741, 1060)
+				font       	(object Font
+				    size       	9
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				anchor     	10
+				anchor_loc 	1
+				nlines     	1
+				max_width  	450
+				justify    	0
+				label      	"<<communicate>>"
+				pctDist    	0.500000
+				height     	36
+				orientation 	1)
+			    line_color 	3342489
+			    quidu      	"35C0ED3A00F0"
+			    roleview_list 	(list RoleViews
+				(object RoleView "" @7
+				    Parent_View 	@5
+				    location   	(501, -160)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"35C0ED3B0118"
+				    client     	@5
+				    supplier   	@3
+				    vertices   	(list Points
+					(741, 1024)
+					(978, 1024))
+				    line_style 	0)
+				(object RoleView "" @8
+				    Parent_View 	@5
+				    location   	(501, -160)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"35C0ED3B0119"
+				    client     	@5
+				    supplier   	@4
+				    vertices   	(list Points
+					(741, 1024)
+					(505, 1024))
+				    line_style 	0)))))))
+	(object UseCase "Student data"
+	    quid       	"5B55D0CC00FB")
+	(object UseCase "Teaching plan"
+	    quid       	"5B55D0D501B2")
+	(object Association "$UNNAMED$0"
+	    quid       	"35C0ED3A00F0"
+	    stereotype 	"communicate"
+	    roles      	(list role_list
+		(object Role "$UNNAMED$1"
+		    quid       	"35C0ED3B0118"
+		    supplier   	"Use Case View::SICS::Use Cases::Basic information management::Basic information of school"
+		    quidu      	"34E37FB203D4"
+		    is_navigable 	TRUE)
+		(object Role "$UNNAMED$2"
+		    quid       	"35C0ED3B0119"
+		    supplier   	"Use Case View::SICS::Actors::School"
+		    quidu      	"353D5816026C")))
+	(object Class_Category "Basic situation of school"
+	    quid       	"5B55D10103A7"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "Teacher data"
+	    quid       	"5B55D11302A3"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "Training base"
+	    quid       	"5B55D1240312"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list))
+	(object Class_Category "special fund construction projects"
+	    quid       	"5B55D12C02E1"
+	    exportControl 	"Public"
+	    logical_models 	(list unit_reference_list)
+	    logical_presentations 	(list unit_reference_list)))
+    logical_presentations 	(list unit_reference_list
+	(object ClassDiagram "Basic information management "
+	    quid       	"5B55D0E10164"
+	    title      	"Basic information management "
+	    zoom       	100
+	    max_height 	28350
+	    max_width  	21600
+	    origin_x   	0
+	    origin_y   	0
+	    items      	(list diagram_item_list))))
